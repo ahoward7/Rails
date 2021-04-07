@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studentID: 1
+  name: MyString
+  curr_year: 
+  curr_term: MyString
+  major: MyString
+  catalog: 
+
+two:
+  studentID: 1
+  name: MyString
+  curr_year: 
+  curr_term: MyString
+  major: MyString
+  catalog: 

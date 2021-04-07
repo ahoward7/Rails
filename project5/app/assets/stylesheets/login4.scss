@@ -1,0 +1,138 @@
+body {
+    overflow: hidden;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#login-cloud {
+    height: 600px;
+    width: 840px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: image-url("Cloud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box, #new-user-box {
+    height: 275px;
+    width: 350px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-label, #new-user-label, #success {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: -8%;
+    text-align: center;
+    color: skyblue;
+    font-size: 55px;
+}
+
+#success {
+    top: 30%;
+}
+
+#form, #new-user-form {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 15%;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 2vmin;
+}
+
+.input-text {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.input {
+    width: 65%;
+    height: 10%;
+    position: absolute;
+    right: 0%;
+    border-radius: 15px;
+    border: 0;
+    background-color: skyblue;
+    text-indent: 6px;
+    color: white;
+}
+
+#username-text, #username {
+    top: 12%;
+}
+
+#password-text, #password {
+    top: 30.5%;
+}
+
+#student-text, #student {
+    top: 2%;
+}
+
+#new-username-text, #new-username {
+    top: 16.5%;
+}
+
+#new-password-text, #new-password {
+    top: 31%;
+}
+
+#major-text, #major {
+    top: 45.5%
+}
+
+#new-user, #back-to-login {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#go-login {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: skyblue;
+}
+
+#submit {
+    width: 100%;
+    bottom: 35%;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#new-submit {
+    width: 100%;
+    top: 61%;
+    cursor: pointer;
+}

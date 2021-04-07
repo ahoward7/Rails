@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<strong>Name:</strong>
+  <%= @plan.name %><br/>
+  <strong>Courses:</strong><br/>
+  <% @plan.plan_courses.each do |pc| %>
+    <%= pc.course.name %>
+    <%= pc.term %>
+    <%= pc.year %><br/>
+<% end %>
+
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', plans_path %>

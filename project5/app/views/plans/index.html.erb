@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title> Project 4 </title>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');</style>
+    
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        
+        <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+    </head>
+    <body>
+        <div id="background-div"></div>
+        <span class="header" id="grape">World 4 - APE</span>
+        <div id="student" class="header-info">Student: <%= current_user.login %></div>
+        <div id="log-out"><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></div>
+        <select id="major-select"></select>
+        <div id="total-hours"></div>
+        <div id="major">Major: </div>
+        <div id="catalog" class="header-info">Catalog: </div>
+        <div id="minor" class="header-info">Minor: </div>
+        <div id="main-board">
+            <span class="main-header">~ Academic Plan Fall 2016 ~</span>
+            <div class="semesters" id="fall1">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-1</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="spring1">
+                <span class="semester-header">
+                    <span class="credits">Hours: 16</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-2</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="summer1">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-3</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="fall2">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-4</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="spring2">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-5</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="summer2">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-6</span>
+                </span>
+                <div class="class-column"></div>
+            </div>
+            <div class="semesters" id="fall3">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-7</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="spring3">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-8</span>
+                </span>
+                <div class="class-column">
+                </div>
+            </div>
+            <div class="semesters" id="summer3">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-9</span>
+                </span>
+                <div class="class-column"></div>
+            </div>
+            <div class="semesters" id="fall4">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-10</span>
+                </span>
+                <div class="class-column"></div>
+            </div>
+            <div class="semesters" id="spring4">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-11</span>
+                </span>
+                <div class="class-column"></div>
+            </div>
+            <div class="semesters" id="summer4">
+                <span class="semester-header">
+                    <span class="credits">Hours: 0</span>
+                    <span class = "semester-term"></span>
+                    <span class = "world-name">W4-12</span>
+                </span>
+                <div class="class-column"></div>
+            </div>
+        </div>
+
+        <div id="mush-border">
+            <div id="bottom-board">
+                <span class="bottom-header">~ Course Finder ~</span>
+                <table id="data-table" class="display" width="99%">
+                    <thead>
+                        <tr>
+                            <th id="bottom-left-header">Designator</th>
+                            <th id="bottom-middle-header">Title</th>
+                            <th id="bottom-right-header">Credits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="mush-border-left"></div>
+        <div id="mush-border-right"></div>
+        
+        <div id="side-board">
+            <span class="side-header">~ Requirements ~</span>
+            <div class="accordion">
+                <h1 id="accordion-header1">1</h1>
+                <div id="accordion-item1" class="accordion-item">
+                    <div id="core-column" class="class-column"></div>
+                    <div id="goomba1"></div>
+                </div>
+
+                <h1 id="accordion-header2">2</h1>
+                <div id="accordion-item2" class="accordion-item">
+                    <div id="cognate-column" class="class-column"></div>
+                    <div id="goomba2"></div>
+                </div>
+
+                <h1 id="accordion-header3">3</h1>
+                <div id="accordion-item3" class="accordion-item">
+                    <div id="elective-column" class="class-column"></div>
+                    <div id="goomba3"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--<p id="notice"><%= notice %></p>
+
+<h1>Plans</h1>
+
+<div id="test-div">
+
+<input type='text' id='calendarField' />
+
+<table id="example">
+  <thead>
+    <tr><td>abc</td><td>3</td><td>hello</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>def</td><td>4</td><td>goodbye</td></tr>
+    <tr><td>ghi</td><td>5</td><td>whatever</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plans.each do |plan| %>
+      <tr>
+        <td><%= plan.name %></td>
+        <td><%= link_to 'Show', plan %></td>
+        <td><%= link_to 'Edit', edit_plan_path(plan) %></td>
+        <td><%= link_to 'Destroy', plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plan', new_plan_path %>-->
